@@ -2,11 +2,15 @@
 
 * {
     font-family: 'Barlow', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     height: 100%;
     background-color: rgb(161, 80, 21);
+    margin: 0 auto;
 }
 
 img {
@@ -14,10 +18,15 @@ img {
 }
 
 .container {
+    padding-top: 50px;
     width: 800px;
-    margin: 30px auto;
+    margin: 0 auto;
     color: white;
     text-align: center;
+}
+
+p, h1 {
+    padding: 10px 0;
 }
 
 #tens, #seconds {
@@ -25,6 +34,7 @@ img {
 }
 
 button {
+    margin-top: 10px;
     color: #ffffff;
     padding: 10px 40px;
     margin: 0 10px 0 10px;
@@ -45,4 +55,20 @@ button:hover {
     font-size: 1.5rem;
     font-weight: 500;
     cursor:pointer;
+}
+
+@media screen and (max-width:767px) {
+    .container {
+        color: white;
+        text-align: center;
+        padding-top: 350px;
+    }
+    
+    p, h1 {
+        padding: 20px 0;
+    }
+    
+    button {
+        margin-top: 20px;
+    }
 }
