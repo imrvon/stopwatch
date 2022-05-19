@@ -13,16 +13,20 @@ body {
     margin: 0 auto;
 }
 
-img {
-    border-radius: 50%;
-}
-
 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     padding-top: 50px;
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
     color: white;
     text-align: center;
+}
+
+img {
+    border-radius: 50%;
 }
 
 p, h1 {
@@ -34,10 +38,9 @@ p, h1 {
 }
 
 button {
-    margin-top: 10px;
     color: #ffffff;
     padding: 10px 40px;
-    margin: 0 10px 0 10px;
+    margin: 10px;
     background-color: transparent;
     border: 2px solid #ffffff;
     border-radius: 5px;
@@ -48,7 +51,7 @@ button {
 button:hover {
     color: rgb(161, 80, 21);
     padding: 10px 40px;
-    margin: 0 10px 0 10px;
+    margin: 10px;
     background-color: #ffffff;
     border: 2px solid rgb(161, 80, 21);
     border-radius: 5px;
@@ -58,17 +61,26 @@ button:hover {
 }
 
 @media screen and (max-width:767px) {
-    .container {
-        color: white;
-        text-align: center;
-        padding-top: 350px;
-    }
-    
-    p, h1 {
-        padding: 20px 0;
-    }
-    
     button {
-        margin-top: 20px;
+        color: #ffffff;
+        padding: 10px 20px;
+        margin: 10px;
+        background-color: transparent;
+        border: 2px solid #ffffff;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+
+    button:hover {
+        color: rgb(161, 80, 21);
+        padding: 10px 20px;
+        margin: 10px;
+        background-color: #ffffff;
+        border: 2px solid rgb(161, 80, 21);
+        border-radius: 5px;
+        font-size: 1.2rem;
+        font-weight: 500;
+        cursor:pointer;
     }
 }
